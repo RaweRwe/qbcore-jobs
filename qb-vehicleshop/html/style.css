@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.vehicle-shop {
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    background: url("./img/site-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1.0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+}
+
+.vehicle-shop-header {
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    background-color: rgb(31, 31, 31);
+    border-bottom: 3px solid #d14848;
+}
+
+#vehicle-shop-header-logo {
+    position: absolute;
+    width: 400px;
+    left: -40px;
+    top: -20px;
+}
+
+.vehicle-category {
+    position: relative;
+    margin: auto 0;
+    top: 25%;
+    right: 5%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    float: right;
+    margin-left: 40px;
+    transition: all 0.1s ease-in-out;
+}
+
+.selected {
+    border-bottom: 3px solid white;
+}
+
+.vehicle-category:hover {
+    color: rgb(170, 170, 170);
+}
+
+
+.vehicle-category > p {
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+}
+
+.vehicles {
+    position: relative;
+    width: 85%;
+    height: 450px;
+    margin: 0 auto;
+    top: 25%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.vehicle {
+    position: relative;
+    width: 30%;
+    height: 43.5%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,0.1);
+}
+
+.car-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center;
+}
+
+.vehicle-buy-btn {
+    position: absolute;
+    left: 5%;
+    width: 90%; 
+    bottom: 5%;
+    text-align: center;
+    height: 20px;
+    background-color: rgb(42, 42, 42);
+    color: white;
+    line-height: 19px;
+    font-size: 14px;
+}
+
+.vehicle-buy-btn > p {
+    font-family: 'Roboto', cursive;
+}
+
+#vehicle-name {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(24, 24, 24);
+    top: 10px;
+    left: 10px;
+}
+
+#vehicle-price {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(24, 24, 24);
+    top: 10px;
+    right: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: #299B5Ee5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #299B5Ee5;
+}
+
+.vehicle-shop-home {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 25%;
+}
+
+#home-titel {
+    position: absolute;
+    color: rgb(46, 46, 46);
+    font-size: 26px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#home-text {
+    position: absolute;
+    color: rgb(46, 46, 46);
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+#home-page-car {
+    position: absolute;
+    width: 300px;
+    right: 30px;
+    top: 70px;
+}
+
+.recent-added-vehicles {
+    position: absolute;
+    width: 80%;
+    height: 45%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 75%;
+    background-color: rgb(187, 187, 187);
+    border-radius: 6px;
+}
+
+#added-vehicles-title {
+    position: absolute;
+    color: rgb(36, 36, 36);
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.added-vehicle {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(138, 138, 138);
+    color: white;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.added-vehicle > span {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.buy-vehicle-map {
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    background-image: url("./img/gta-map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 21%;
+    z-index: 200;
+}
+
+.map-header {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(246, 246, 246);
+	border-bottom: 1px solid #299B5Ee5;
+}
+
+.map-header > p {
+    color: rgb(12, 12, 12);
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    line-height: 25px;
+}
+
+.map-pin > img {
+    width: 20px;
+    transition: all 0.1s ease-in-out;
+}
+
+.map-pin:hover > img{
+    width: 22px;
+}
+
+#motelgarage {
+    position: absolute;
+    top: 125px;
+    left: 327px;
+}
+
+#sapcounsel {
+    position: absolute;
+    top: 170px;
+    left: 260px;
+}
+
+/* Tool Tip */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 5px 15px;
+    position: absolute;
+    left: 125%;
+    bottom: 10%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 101;  
+    font-size: 11px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.75) transparent transparent;
+    z-index: 101;  
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    z-index: 101;  
+}
+
+#close-map {
+    position: absolute;
+    right: 8px;
+    bottom: 4px;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+    font-size: 18px;
+}

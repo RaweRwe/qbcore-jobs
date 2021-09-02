@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>QB Vehicleshop</title>
+</head>
+    <body>
+        <div class="container" style="user-select:none !important;">
+            <div class="vehicle-shop">
+                <div class="vehicle-shop-header">
+                    <img src="./img/logo.png" id="vehicle-shop-header-logo">
+
+                    <div class="vehicle-category" id="sports"><p>Sports</p></div>
+                    <div class="vehicle-category" id="super"><p>Super</p></div>
+                    <div class="vehicle-category" id="sedans"><p>Sedans</p></div>
+                    <div class="vehicle-category" id="coupes"><p>Coupes</p></div>
+                    <div class="vehicle-category selected" id="home"><p>Home</p></div>
+                </div>
+
+                <div class="vehicle-shop-home">
+                    <span id="home-titel">Welkom bij Premium Deluxe Motorsport!</span>
+                    <span id="home-text">Ben jij opzoek naar een voertuig die bij jou past? <br>Dan zit je hier goed, wij hebben precies waar jij naar opzoek bent, <br>neem een kijkje tussen onze categorieën en je bent meteen verkocht!</span>
+                    <img src="./img/home-car.png" id="home-page-car">
+
+                    <div class="recent-added-vehicles">
+                        <span id="added-vehicles-title">Nieuwste voertuig bij Premium Deluxe Motorsport</span>
+                        <div class="added-vehicle">
+                            <span id="added-vehicle-name">Voertuig : Adder</span><br>
+                            <span id="added-vehicle-class">Klasse : Super</span><br>
+                            <span id="added-vehicle-price">Prijs : $ 250.000 </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vehicles">
+
+                </div>
+            </div>
+
+            <div class="buy-vehicle-map">
+                <div class="map-header">
+                    <p>Selecteer een garage naar keuzen.</p>
+                    <i class="material-icons" id="close-map">close</i>
+                </div>
+
+                <div class="map-pin tooltip" id="motelgarage">
+                    <img src="./img/map-pin.png">
+                    <span class="tooltiptext tooltip-right">Motel Garage</span>
+                </div>
+                <div class="map-pin tooltip" id="sapcounsel">
+                    <img src="./img/map-pin.png">
+                    <span class="tooltiptext tooltip-right">SA Garage</span>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
