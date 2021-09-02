@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
+        <script src="jquery.js"></script>
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <div class='main-container'>
+            
+            <!-- BossMenu Conainer -->
+            <div class="welcome-container">
+                <div class="w3-animate-left"> <!-- Animation -->
+                    <span id="welcome-title">Boss Menu</span>
+                    <div id="waiting-players">
+                        <div class='option-box box-shadow goto' datafrom='welcome-container' datato='employees-container' id="option-employee"><span id='option-text'>Employees</span></div>
+                        <div class='option-box box-shadow goto' datafrom='welcome-container' datato='recruits-container' id="option-recruit"><span id='option-text'>Recruit</span></div>
+                        <div class='option-box box-shadow' id="option-bosstash"><span id='option-text'>Boss Locker</span></div>
+                        <div class='option-box box-shadow goto' datafrom='welcome-container' datato='society-container' id="option-employee"><span id='option-text'>Society Safe</span></div>
+                    </div>
+                    <span class='goto bottom-option' datafrom='welcome-container' datato='quit'><i class="fas fa-sign-out-alt" style="font-size: 20px;"></i> Exit</span>
+                </div>
+            </div>
+            
+            <!-- Employees Conainer -->
+            <div class="employees-container" style="display: none;">
+                <div class="w3-animate-left"> <!-- Animation -->
+                    <span id="emplyees-title">Manage Employees</span>
+                    <div id="emplyees-list"></div>
+                    <span class='goto bottom-option' datafrom='employees-container' datato='welcome-container'><i class="fas fa-backward" style="font-size: 20px;"></i> Back</span>
+                </div>
+            </div>
+            
+            <!-- Recruits Conainer -->
+            <div class="recruits-container" style="display: none;">
+                <div class="w3-animate-left"> <!-- Animation -->
+                    <span id="recruits-title">Recruit</span>
+                        <div id="recruits-list"></div>
+                    <span class='goto bottom-option' datafrom='recruits-container' datato='welcome-container'><i class="fas fa-backward" style="font-size: 20px;"></i> Back</span>
+                </div>
+            </div>
+
+            <!-- Society Conainer -->
+            <div class="society-container" style="display: none;">
+                <div class="w3-animate-left"> <!-- Animation -->
+                    <span id="society-title">Society Safe</span>
+                        <div id="society-list">
+                            <div class='player-box box-shadow option-enabled'><span id='option-text'>Current Amount: $<span id='society-amount'>0</span></span></div>
+                            <div class='player-box box-shadow' id="player-deposit"><span class='hoster-options' id="playeroptions-deposit"><span style="position: relative; top: 15%; margin-left: 27%;"><i id="player-deposit" class="fas fa-angle-double-up deposit-up"></i>  <i id="player-deposit" class="fas fa-angle-double-down deposit-down"></i></span></span><span id='option-text' class='deposit'>Deposit <span id='deposit-amount'>100</span>$</span></div>
+                            <div class='player-box box-shadow' id="player-withdraw"><span class='hoster-options' id="playeroptions-withdraw"><span style="position: relative; top: 15%; margin-left: 27%;"><i id="player-withdraw" class="fas fa-angle-double-up withdraw-up"></i>  <i id="player-withdraw" class="fas fa-angle-double-down withdraw-down"></i></span></span><span id='option-text' class='withdraw'>Withdraw <span id='withdraw-amount'>100</span>$</span></div>
+                        </div>
+                    <span class='goto bottom-option' datafrom='society-container' datato='welcome-container'><i class="fas fa-backward" style="font-size: 20px;"></i> Back</span>
+                </div>
+            </div>
+
+            <!-- Job grades -->
+            <div class="job-container" style="display: none;">
+                <div class="w3-animate-left"> <!-- Animation -->
+                    <span id="emplyees-title">Choose Grade</span>
+                    <div id="grade-list"></div>
+                    <span class='goto bottom-option' datafrom='job-container' datato='employees-container'><i class="fas fa-backward" style="font-size: 20px;"></i> Back</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

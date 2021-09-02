@@ -1,0 +1,313 @@
+@font-face {
+    font-family: 'first';
+    src: url(https://cdn.discordapp.com/attachments/717894831208267786/749302811908374648/BACK_TO_BLACK_DEMO.TTF);
+}
+
+@font-face {
+    font-family: 'seco';
+    src: url(https://cdn.discordapp.com/attachments/717894831208267786/749303717911855134/BAHNSCHRIFT.TTF);
+}
+
+.main-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.7703568487942052) 0%, rgba(0,0,0,0.15) 22%, rgba(0,212,255,0) 100%);
+}
+
+#waiting-hoster-title 
+
+#waiting-players {
+    position: relative;
+    height: 12%;
+    width: 12%;
+}
+
+.player-box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.63);
+    margin-top:  5px;
+    width: 900%;
+    height: 50px;
+}
+
+.table-hoster {
+    border-left: 8px solid rgb(0, 255, 59)
+}
+
+#player-box-name {
+    position: relative;
+    font-family: 'seco';
+    font-size: 20px;
+    top: 19.5%;
+    left: 7%;
+    color: white;
+}
+
+
+
+.player-box:hover {
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    0px 0px 12px 0px rgba(0, 0, 0, 1);
+    box-shadow:         0px 0px 12px 0px rgba(0, 0, 0, 1);
+}
+
+.goto:hover {
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 1);
+}
+
+#waiting-players-text {
+    color: white;
+    font-family: 'seco';
+    position: relative;
+    top: 5px;
+}
+
+.hoster-options {
+    display: none;
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.27);
+    color: white;
+    font-size: 150%;
+}
+
+#settings-title {
+    font-family: 'first';
+    font-size: 2.7vw;
+    color: white;
+    text-shadow: 0px 2px 3px #666;
+    
+    position: relative;
+    left: 6%;
+}
+
+#settings-list {
+    position: absolute;
+    height: 12%;
+    width: 12%;
+}
+
+.settings-container {
+    position: relative;
+    top: 46%;
+    width: 25%;
+    left: 6%;
+    transform: translateY(-50%);
+}
+
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #e8e8e8;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+
+.waiting-container {
+    position: relative;
+    top: 46%;
+    width: 25%;
+    left: 6%;
+    transform: translateY(-50%);
+}
+
+#welcome-title {
+    font-family: 'first';
+    font-size: 2.7vw;
+    color: white;
+    text-shadow: 0px 2px 3px #666;
+    
+    position: relative;
+    left: 6%;
+}
+
+#waiting-players-count {
+    position: relative;
+    left: 330px;
+}
+
+.settings-box {
+    position: relative;
+    margin-top:  5px;
+    width: 1000%;
+    height: 50px;
+    
+    color: white;
+    font-family: 'seco';
+    font-size: 20px;
+}
+
+.welcome-container {
+    position: relative;
+    top: 46%;
+    width: 25%;
+    left: 6%;
+    transform: translateY(-50%);
+}
+
+.welcome-box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.63);
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+}
+
+#waiting-title {
+    font-family: 'first';
+    font-size: 2.7vw;
+    color: white;
+    text-shadow: 0px 2px 3px #666;
+    
+    position: relative;
+    left: 6%;
+}
+
+.option-box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.63);
+    margin-top:  5px;
+    width: 100%;
+    height: 50px;
+}
+
+.option-enabled {
+    border-left: 8px solid rgba(0, 98, 255, 0.72)
+}
+
+#option-text {
+    position: relative;
+    font-family: 'seco';
+    font-size: 20px;
+    top: 19.5%;
+    left: 7%;
+    color: white;
+}
+
+.box-shadow:hover {
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow:    0px 0px 12px 0px rgba(0, 0, 0, 1);
+    box-shadow:         0px 0px 12px 0px rgba(0, 0, 0, 1);
+}
+
+#settings-table {
+    position: relative;
+    height: 12%;
+    width: 12%;
+}
+
+.employees-container {
+    position: relative;
+    top: 46%;
+    width: 25%;
+    left: 6%;
+    transform: translateY(-50%);
+}
+
+#emplyees-list {
+    position: relative;
+    height: 12%;
+    width: 12%;
+}
+
+#emplyees-title {
+    font-family: 'first';
+    font-size: 2.7vw;
+    color: white;
+    text-shadow: 0px 2px 3px #666;
+    
+    position: relative;
+    left: 6%;
+}
+
+.recruits-container {
+    position: relative;
+    top: 46%;
+    width: 25%;
+    left: 6%;
+    transform: translateY(-50%);
+}
+
+#recruits-list {
+    position: relative;
+    height: 12%;
+    width: 12%;
+}
+
+#recruits-title {
+    font-family: 'first';
+    font-size: 2.7vw;
+    color: white;
+    text-shadow: 0px 2px 3px #666;
+    
+    position: relative;
+    left: 6%;
+}
+
+.society-container {
+    position: relative;
+    top: 46%;
+    width: 25%;
+    left: 6%;
+    transform: translateY(-50%);
+}
+
+#society-list {
+    position: relative;
+    height: 12%;
+    width: 12%;
+}
+
+#society-title {
+    font-family: 'first';
+    font-size: 2.7vw;
+    color: white;
+    text-shadow: 0px 2px 3px #666;
+    
+    position: relative;
+    left: 6%;
+}
+
+.bottom-option {
+    color: white;
+    font-size: 26px;
+    font-family: 'seco';
+    
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+}
+
+#grade-list {
+    position: relative;
+    height: 12%;
+    width: 12%;
+}
+
+.job-container {
+    position: relative;
+    top: 46%;
+    width: 25%;
+    left: 6%;
+    transform: translateY(-50%);
+}
+
+.grade-box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.63);
+    margin-top:  5px;
+    width: 900%;
+    height: 50px;
+}

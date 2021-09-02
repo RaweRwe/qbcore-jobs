@@ -1,0 +1,149 @@
+body {
+ overflow: hidden;
+ user-select: none;
+ font-weight: 650;
+ font-family: 'Lato', sans-serif;
+}
+
+.main-container {
+ position: absolute;
+ top: -30vh;
+ left: 40vw;
+ display: none;
+}
+
+.menu-items-container {
+ display: none;
+ width: 17vw;
+ height: 26vh;
+ border-radius: 5px;
+ background-color: rgb(68, 68, 68);
+ box-shadow: 1px 1px 6px rgb(5, 5, 5);
+}
+
+.menu-items-container > p {
+ text-align: center;
+ padding-top: 1vh;
+ color: white;
+ font-size: 2.7vh;
+}
+
+.text-input-price {
+ margin-top: 0vh;
+ margin-left: 4vh;
+ width: 22vh;
+ height: 3vh;
+ font-size: 1.5vh;
+ border-radius: 10px;
+ font-weight: 800;
+}
+
+.text-input-note {
+ margin-top: 2vh;
+ margin-left: 4vh;
+ width: 22vh;
+ height: 3vh;
+ font-size: 1.5vh;
+ border-radius: 10px;
+ font-weight: 800; 
+}
+
+.accept-button {
+ position: absolute;
+ width: 10vh;
+ height: 4vh;
+ margin-top: 1.5vh;
+ margin-left: 4vh;
+ border-radius: 10px;
+ box-shadow: 1px 1px 6px rgb(5, 5, 5);
+ background-color: rgb(41, 100, 41);  
+}
+
+.cancel-button {
+ position: absolute;
+ width: 10vh;
+ height: 4vh;
+ margin-top: 1.5vh;
+ margin-left: 16.5vh;
+ border-radius: 10px;
+ box-shadow: 1px 1px 6px rgb(5, 5, 5);
+ background-color: rgb(104, 31, 31);
+}
+
+.accept-button > p, .cancel-button > p {
+ text-align: center;
+ font-size: 1.2vh;
+ color: white;
+}
+
+.accept-button:hover {
+ background-color:  rgba(41, 100, 41, 0.74);
+}
+
+.cancel-button:hover {
+ background-color: rgba(104, 31, 31, 0.74); 
+}
+
+.payment-container {
+ display: none;
+ overflow-x: auto;                  
+ overflow-y: auto;
+ width: 17vw;
+ height: 26vh;
+ border-radius: 5px;
+ background-color: rgb(68, 68, 68);
+ box-shadow: 1px 1px 6px rgb(5, 5, 5);
+}
+
+.payment {
+ position: relative;
+ left: 1vh;
+ top: 0.85vh;
+ width: 15.9vw;
+ height: 3.5vh;
+ margin-top: 1vh;
+ border-radius: 5px;
+ background-color: rgb(182, 182, 182);
+}
+
+.payment:hover {
+ background-color: rgba(182, 182, 182, 0.835);
+}
+
+.payment > p {
+ font-size: 1.2vh;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ padding-top: 0.2vh;
+ padding-left: 0.5vh;
+ color: rgb(53, 53, 53);
+}
+
+.close-button {
+ font-size: 1.2vh;
+ width: 0.7vw;
+ height: 1.5vh;
+ background-color: rgb(128, 40, 40);
+ position: absolute;
+ right: 0;
+ text-align: center;
+ color: white;
+}
+
+.close-button:hover {
+ background-color: rgba(104, 31, 31, 0.74); 
+}
+
+::-webkit-scrollbar-track {
+ background-color: transparent;
+}
+  
+::-webkit-scrollbar{
+ width: 0.5vh;
+ background-color: transparent;
+}
+  
+::-webkit-scrollbar-thumb {
+ background-color: transparent;
+}
