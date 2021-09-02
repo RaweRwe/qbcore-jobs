@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+@font-face {
+	font-family: 'vcr-ocd';
+	src: url('vcr-ocd.ttf');
+}
+
+html {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.fingerprint-container {
+	display: none;
+	position: relative;
+	width: 60vh;
+	margin: 0 auto;
+	top: 10vh;
+}
+
+.fingerprint-frame {
+	width: 60vh;
+}
+
+.take-fingerprint {
+	position: absolute;
+	height: 12.5vh;
+	width: 10vh;
+	background: rgba(250, 250, 250, 0.45);
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 15vh;
+	transition: 0.1s;
+}
+
+.take-fingerprint:hover {
+	background: rgba(250, 250, 250, 0.65);
+}
+
+.fingerprint-id {
+	position: absolute;
+	width: 22vh;
+	height: 13vh;
+	top: 23vh;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	padding-top: 2vh;
+	font-family: 'Roboto Mono';
+	font-weight: bold;
+}
+
+.fingerprint-id > p {
+	padding-top: 2vh;
+	font-weight: lighter;
+}
+
+.Klik {
+  display: none;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  width: 4vh;
+  height: 4vh;
+  top: 86vh;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+.Klik:hover {
+ color: rgba(255, 255, 255, 0.698);
+}

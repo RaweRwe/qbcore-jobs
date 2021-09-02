@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="meter.css">
+    <title>Kwak Taxi Meter</title>
+</head>
+    <body>
+        <div class="container">
+            <img src="./g5-meter.png" alt="g5-meter" id="g5-meter">
+            <div class="g5-meter">
+
+                <span id="total-price">$ 0.00</span>
+                <span id="total-price-label">Total price in $</span>
+
+                <span id="total-distance">0.0 Miles</span>
+                <span id="total-distance-label">Total distance</span>
+
+                <span id="total-price-per-100m"></span>
+                <span id="total-price-per-100m-label">Price p/ 0.1m</span>
+
+                <div class="toggle-meter-btn">
+                    <p>Stopped</p>
+                </div>
+            </div>
+        </div>
+        <script src="./meter.js"></script>
+    </body>
+</html>
