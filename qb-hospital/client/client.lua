@@ -4,12 +4,11 @@ local onDuty = false
 local CurrentGarage = nil
 isLoggedIn = false
 
-QBCore = nil  
+QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
     Citizen.SetTimeout(1250, function()
-    TriggerEvent("QBCore:GetObject", function(obj) QBCore = obj end)    
      Citizen.Wait(250)
       QBCore.Functions.GetPlayerData(function(PlayerData)
         if PlayerData.metadata["isdead"] then

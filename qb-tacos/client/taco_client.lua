@@ -10,19 +10,9 @@ local Keys = {
 	["NENTER"] = 201, ["N4"] = 108, ["N5"] = 60, ["N6"] = 107, ["N+"] = 96, ["N-"] = 97, ["N7"] = 117, ["N8"] = 61, ["N9"] = 118
 }
 
-QBCore = nil
+QBCore = exports['qb-core']:GetCoreObject()
 
 local Bezig = false
-
-Citizen.CreateThread(function() 
-    while true do
-        Citizen.Wait(1)
-        if QBCore == nil then
-            TriggerEvent("QBCore:GetObject", function(obj) QBCore = obj end)    
-            Citizen.Wait(200)
-        end
-    end
-end)
 
 RegisterNetEvent('qb-tacos:client:SetStock')
 AddEventHandler('qb-tacos:client:SetStock', function(stock, amount)

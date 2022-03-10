@@ -1,8 +1,4 @@
-QBCore = nil
-
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
-
-
+local QBCore = exports['qb-core']:GetCoreObject()
 
 QBCore.Functions.CreateCallback('qb-fishing:server:can:pay', function(source, cb, price)
     local Player = QBCore.Functions.GetPlayer(source)

@@ -1,5 +1,4 @@
-QBCore = nil
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterServerEvent('qb-hunt:reward')
 AddEventHandler('qb-hunt:reward', function(Weight)

@@ -9,17 +9,11 @@ local Keys = {
     ["LEFT"] = 174, ["RIGHT"] = 175, ["TOP"] = 27, ["DOWN"] = 173,
 }
 
-QBCore = nil
+QBCore = exports['qb-core']:GetCoreObject()
+
 isLoggedIn = false
 local butcher = false
 local PlayerJob = {}
-
-CreateThread(function()
-    while QBCore == nil do
-        TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
-        Wait(200)
-    end
-end)
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()

@@ -1,6 +1,4 @@
-QBCore = nil
-
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterServerEvent('qb-taco:server:start:black')
 AddEventHandler('qb-taco:server:start:black', function()

@@ -1,4 +1,4 @@
-QBCore = nil
+QBCore = exports['qb-core']:GetCoreObject()
 
 isLoggedIn = true
 local PlayerJob = {}
@@ -6,7 +6,6 @@ local PlayerJob = {}
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
    Citizen.SetTimeout(750, function()
-     TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
      Citizen.Wait(200)
      PlayerJob = QBCore.Functions.GetPlayerData().job
      if PlayerJob.name == "reporter" then

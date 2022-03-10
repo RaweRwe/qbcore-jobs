@@ -1,6 +1,4 @@
-QBCore = nil
-
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
 QBCore.Functions.CreateCallback('qb-tow:server:get:config', function(source, cb)
     cb(Config)

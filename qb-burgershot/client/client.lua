@@ -1,15 +1,15 @@
+QBCore = exports['qb-core']:GetCoreObject()
+
 local CurrentWorkObject = {}
 local LoggedIn = false
 local InRange = false
-local QBCore = nil  
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
-    Citizen.SetTimeout(1250, function()
-        TriggerEvent("QBCore:GetObject", function(obj) QBCore = obj end)    
-        Citizen.Wait(450)
-        LoggedIn = true
-    end)
+  Citizen.SetTimeout(1250, function()
+    Citizen.Wait(450)
+    LoggedIn = true
+  end)
 end)
 
 RegisterNetEvent('QBCore:Client:OnPlayerUnload')

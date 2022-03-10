@@ -1,5 +1,4 @@
-QBCore= nil
-TriggerEvent('QBCore:GetObject', function(obj) QBCore= obj end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterServerEvent('qb-pig:getNewPig')
 AddEventHandler('qb-pig:getNewPig', function()

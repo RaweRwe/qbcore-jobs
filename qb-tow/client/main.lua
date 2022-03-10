@@ -1,4 +1,4 @@
-QBCore = nil
+QBCore = exports['qb-core']:GetCoreObject()
 
 local HasOwnTowVehicle = false
 local HasVehicleSpawned = false
@@ -10,8 +10,6 @@ local LoggedIn = false
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
     Citizen.SetTimeout(1000, function()
-     TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
-     Citizen.Wait(150)
      QBCore.Functions.TriggerCallback("qb-tow:server:get:config", function(config)
         Config = config
      end)

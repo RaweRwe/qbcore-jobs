@@ -1,6 +1,5 @@
-QBCore = nil
+local QBCore = exports['qb-core']:GetCoreObject()
 Accounts = {}
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
 
 CreateThread(function()
     Wait(500)

@@ -1,6 +1,4 @@
-QBCore = nil
-
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
+local QBCore = exports['qb-core']:GetCoreObject()
 
 QBCore.Commands.Add("newscam", "Grab a news camera", {}, false, function(source, args)
     local Player = QBCore.Functions.GetPlayer(source)

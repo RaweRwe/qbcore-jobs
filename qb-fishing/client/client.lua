@@ -1,4 +1,4 @@
-QBCore = nil
+QBCore = exports['qb-core']:GetCoreObject()
 
 local IsSelling = false
 local CurrentRadiusBlip = {}
@@ -13,8 +13,7 @@ local LoggedIn = false
 
 RegisterNetEvent("QBCore:Client:OnPlayerLoaded")
 AddEventHandler("QBCore:Client:OnPlayerLoaded", function()
-    Citizen.SetTimeout(750, function()
-        TriggerEvent("QBCore:GetObject", function(obj) QBCore = obj end)    
+    Citizen.SetTimeout(750, function() 
         SetRandomLocation()
         Citizen.Wait(250)
         LoggedIn = true

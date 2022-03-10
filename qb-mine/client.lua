@@ -1,8 +1,7 @@
-QBCore = nil
+QBCore = exports['qb-core']:GetCoreObject()
 local mining = false
 
 Citizen.CreateThread(function()
-    while QBCore == nil do TriggerEvent("QBCore:GetObject", function(obj) QBCore = obj end) Wait(0) end
     while QBCore.Functions.GetPlayerData().job == nil do Wait(0) end
     for k, v in pairs(Config.MiningPositions) do
         addBlip(v.coords, 153, 5, Strings['mining'])

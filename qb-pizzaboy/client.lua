@@ -18,12 +18,11 @@ Config.Zones = {
 }
 
 ---------
--- ESX --
+-- Core --
 ---------
 
-QBCore = nil
+QBCore = exports['qb-core']:GetCoreObject()
 PlayerData = {}
-TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
 
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')

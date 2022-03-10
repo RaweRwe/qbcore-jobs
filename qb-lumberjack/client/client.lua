@@ -8,9 +8,9 @@ local Keys = {
     ["HOME"] = 213, ["PAGEUP"] = 10, ["PAGEDOWN"] = 11, ["DELETE"] = 178,
     ["LEFT"] = 174, ["RIGHT"] = 175, ["TOP"] = 27, ["DOWN"] = 173,
     ["NENTER"] = 201, ["N4"] = 108, ["N5"] = 60, ["N6"] = 107, ["N+"] = 96, ["N-"] = 97, ["N7"] = 117, ["N8"] = 61, ["N9"] = 118
-  }
+}
 
-QBCore = nil
+QBCore = exports['qb-core']:GetCoreObject() 
 
 local mining = false
 local textDel = Config.textDel
@@ -28,11 +28,7 @@ local HasVehicle = true
 
 
 Citizen.CreateThread(function()
-     while QBCore == nil do
-        TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
-        Citizen.Wait(200)
-    end
-   while QBCore.Functions.GetPlayerData().job == nil do
+    while QBCore.Functions.GetPlayerData().job == nil do
 		Citizen.Wait(10)
     end
         
