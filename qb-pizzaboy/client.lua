@@ -21,7 +21,7 @@ Config.Zones = {
 -- Core --
 ---------
 
-QBCore = exports['qb-core']:GetCoreObject()
+local QBCore = exports['qb-core']:GetCoreObject()
 PlayerData = {}
 
 
