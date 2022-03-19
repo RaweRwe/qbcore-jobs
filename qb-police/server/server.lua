@@ -240,7 +240,7 @@ end)
 
 QBCore.Functions.CreateCallback('qb-police:GetImpoundedVehicles', function(source, cb)
     local vehicles = {}
-    exports['ghmattimysql']:execute('SELECT * FROM characters_vehicles WHERE garage = @garage', {['@garage'] = "Police"}, function(result)
+    exports.oxmysql:execute('SELECT * FROM characters_vehicles WHERE garage = @garage', {['@garage'] = "Police"}, function(result)
         if result[1] ~= nil then
             vehicles = result
         end

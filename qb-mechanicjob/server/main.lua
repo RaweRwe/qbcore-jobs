@@ -136,7 +136,7 @@ end)
 
 QBCore.Functions.CreateCallback('vehiclemod:server:saveStatus', function(source, cb, plate)
 	if VehicleStatus[plate] ~= nil then
-        exports['ghmattimysql']:execute('UPDATE characters_vehicles SET status = @status WHERE plate = @plate', {['@status'] = json.encode(VehicleStatus[plate]), ['@plate'] = plate})
+        exports.oxmysql:execute('UPDATE characters_vehicles SET status = @status WHERE plate = @plate', {['@status'] = json.encode(VehicleStatus[plate]), ['@plate'] = plate})
     end
 end)
 
